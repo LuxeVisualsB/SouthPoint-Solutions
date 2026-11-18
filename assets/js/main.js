@@ -22,7 +22,7 @@ f.addEventListener('submit',function(e){
   var d=new FormData(f),body='';
   d.forEach(function(v,k){body+=k+': '+v+'\n'});
   var a=document.createElement('a');
-  a.href='mailto:hello@southpoint.example?subject='+encodeURIComponent('Consultation enquiry from '+d.get('company'))+'&body='+encodeURIComponent(body);
+  a.href='mailto:miked.vanbrummelen@gmail.com?subject='+encodeURIComponent('Consultation enquiry from '+d.get('company'))+'&body='+encodeURIComponent(body);
   document.body.appendChild(a);a.click();a.remove();
   f.style.display='none';ok.style.display='block';ok.focus();
 });
